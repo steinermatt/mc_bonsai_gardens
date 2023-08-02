@@ -1,0 +1,51 @@
+{
+    "display":
+    {
+        "icon":
+        {
+            "item":"acacia_sapling",
+            "nbt": "{Enchantments:[{lvl:1s, id:\"minecraft:mending\"}]}"
+        },
+        "title": 
+        {
+            "text": "Bonsai Institute Curriculum",
+            "color": "white",
+            "bold": true
+        },
+        "description": 
+        {
+            "text": "The Path to Zen",
+            "color": "gray",
+            "italics": true
+        },
+        "frame": "goal",
+        "show_toast": true,
+        "announce_to_chat": false,
+        "background": "minecraft:textures/block/stone.png"
+    },
+    "criteria": 
+    {
+        "enrolled":
+        {
+            "trigger": "inventory_changed",
+            "conditions": 
+            {
+                "items":  [
+                    {
+                      "item": "create_things_and_misc:_card"
+                    }
+                  ]
+            }
+        }
+    },
+    "requirements": 
+    [
+        [
+            "enrolled"
+        ]
+    ],
+    "rewards": 
+    {
+        
+    }
+}
